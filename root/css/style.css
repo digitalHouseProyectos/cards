@@ -49,7 +49,7 @@ article {
     flex-direction: column;
     font-size: 1.2rem;
     height: 320px;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 30px 0;
     position: relative;
     width: 30%;
     border: 2px solid black;
@@ -107,25 +107,31 @@ button {
 }
 
 footer {
+    align-content: center;
     background-color: #00669F;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #fff;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     height: 51px;
-    justify-content: space-between;
-    padding: 15px 0 0 10px;
+}
+
+
+footer div img {
+    height: 40%;
+    width: 40%;
 }
 
 /*
-footer div img {
-    height: 40%;
-    width: 60%;
-}
-
-/*@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px){
+    html {
+        min-width: 1024px;
+        width: 100%;
+    }
     h2 {
         background-color: #1CD1B0;
         height: 38px;
+        
     }
     h1 {
         font-size: 300%;
