@@ -22,15 +22,11 @@ h1 {
     padding: 20px 27px;
 }
 
-main {
-    margin: 142px 0;
-}
-
 section {
     align-items: center;
     display: flex;
     justify-content: space-around;
-    margin: 232px 0;
+    margin: 40px 0;
 }
 
 article {
@@ -42,9 +38,8 @@ article {
     flex-direction: column;
     height: 529px;
     justify-content: space-around;
-    margin: 10px;
     position: relative;
-    width: 302px;
+    width: 300px;
 }
 
 i {
@@ -99,4 +94,16 @@ footer {
     color: #fff;
     height: 51px;
     padding: 15px 0 0 10px;
+}
+
+.plus-flotante {
+    position:absolute;
+    right: 7%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fa-circle-plus {
+    color: #00669F;
+    font-size: 60px;
 }
