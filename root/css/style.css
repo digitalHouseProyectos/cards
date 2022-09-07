@@ -8,24 +8,44 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-h2 {
+header h2 {
     background-color: #1CD1B0;
     height: 38px;
     padding: 5px 27px;
 }
 
-h1 {
+header h1 {
+    align-items: center;
     background-color: #00669F;
-    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    display: flex;
     font-size: 300%;
     height:101px;
-    padding: 20px 27px;
+    padding: 0 27px;
 }
 
-section {
+.menu-superior {
+    background-color: #001D2D;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+
+ul {
+    display:flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+ul li {
+    margin: 8px;
+}
+
+.flex {
     align-items: center;
     display: flex;
     justify-content: space-around;
+}
+
+main section {
     margin: 40px 0;
 }
 
@@ -100,10 +120,96 @@ footer {
     position:absolute;
     right: 7%;
     top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .fa-circle-plus {
     color: #00669F;
     font-size: 60px;
+}
+
+
+/**Página añadir**/
+
+.container-añadir {
+    align-items: center;
+    background-color: #00669F;
+    border-radius: 49.0901px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 832px;
+    justify-content: center;
+    margin: 73px 750px;
+    width: 954px;
+}
+
+main .encabezado-form{
+    text-align: center;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+
+form div {
+    display: flex;
+}
+
+form div section {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-left{
+    display: flex;
+    margin-right: 10px;
+    width: 350px;
+
+    border: 1px solid black;
+
+}
+
+.section-right {
+    display:flex;
+    margin-left: 10px;
+    width: 350px;
+
+    border: 1px solid black;
+}
+
+
+
+
+#nombre, #especie, #fecha {
+    background-color: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15.3407px;
+    height: 63px;
+    width: 343px;
+}
+
+textarea {
+    border-radius: 15.3407px;
+    height: 307px;
+    width: 343px;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#personaje {
+    border-top: 1px solid #CCCCCC;
+}
+
+#añadir {
+    background-color: #1CD1B0;
+    border-radius: 23.011px;
+    color: #000;
 }
